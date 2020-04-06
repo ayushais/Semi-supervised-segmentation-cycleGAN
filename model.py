@@ -317,9 +317,9 @@ class semisuper_cycleGAN(object):
 
         # let the choice of dataset configurable
         if self.args.dataset == 'voc2012':
-            labeled_set = VOCDataset(root_path=root, name='label', ratio=0.1, transformation=transform,
+            labeled_set = VOCDataset(root_path=root, name='label', ratio=0.2, transformation=transform,
                                      augmentation=None)
-            unlabeled_set = VOCDataset(root_path=root, name='unlabel', ratio=0.1, transformation=transform,
+            unlabeled_set = VOCDataset(root_path=root, name='unlabel', ratio=0.2, transformation=transform,
                                        augmentation=None)
             val_set = VOCDataset(root_path=root, name='val', ratio=0.5, transformation=transform,
                                  augmentation=None)
